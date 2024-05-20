@@ -3,10 +3,26 @@
 ## Overview
 This system comprises two main components: a frontend application and a backend server, alongside a Prolog server for handling specific logic.
 
+### System Structure
+![System Structure](Structure%20of%20the%20system.png)
+*The overall architecture of the AI-driven social media friend recommendation system.*
+
+### Homepage
 ![Homepage](Homepage.png)
+*The main landing page where users can post updates and interact with other users' posts.*
+
+### Friend Page
 ![Friend Page](Friend%20Page.png)
+*This page shows friend requests, suggestions, and the current friends list, allowing users to manage their social connections.*
+
+### Message Page
 ![Message Page](Message%20Page.png)
+*Allows users to communicate directly with friends, supporting instant messaging functionalities.*
+
+### Sentiment Analysis Result
 ![Sentiment Analysis Result](Sentiment%20Analysis%20Result.png)
+*Displays sentiment analysis results within the admin dashboard for monitoring the emotional tone of posts.*
+
 
 ## Setup Instructions
 

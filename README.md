@@ -34,17 +34,25 @@ The structure diagram illustrates the interactions within Signal:
 ![System Structure](Structure%20of%20the%20system.png)
 
 
+
+
 ### Homepage
 ![Homepage](Homepage.png)
 *The main landing page where users can post updates and interact with other users' posts.*
+
+
 
 ### Friend Page
 ![Friend Page](Friend%20Page.png)
 *This page shows friend requests, suggestions, and the current friends list, allowing users to manage their social connections.*
 
+
+
 ### Message Page
 ![Message Page](Message%20Page.png)
 *Allows users to communicate directly with friends, supporting instant messaging functionalities.*
+
+
 
 ### Sentiment Analysis Result
 ![Sentiment Analysis Result](Sentiment%20Analysis%20Result.png)

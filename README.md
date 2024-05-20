@@ -3,7 +3,10 @@
 ## Overview
 This system comprises two main components: a frontend application and a backend server, alongside a Prolog server for handling specific logic.
 
-
+![Homepage](Homepage.png)
+![Friend Page](Friend%20Page.png)
+![Message Page](Message%20Page.png)
+![Sentiment Analysis Result](Sentiment%20Analysis%20Result.png)
 
 ## Setup Instructions
 

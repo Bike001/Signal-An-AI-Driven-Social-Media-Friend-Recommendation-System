@@ -1,0 +1,48 @@
+/* Dropdown.css */
+.dropdown {
+  display: inline-block; /* Use inline-block for proper alignment */
+  position: relative; /* Relative positioning for absolute positioning of children */
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em; /* Adjust as needed */
+  padding: 8px; /* Add padding if needed to increase hit area */
+  margin-left: auto; /* This will push the dropdown to the end of the header */
+}
+
+/* Show the dropdown-menu based on the state */
+.dropdown-menu {
+  display: block; /* Updated to display:block so that it shows when state is true */
+  position: absolute;
+  top: 100%; /* This will place it directly below the dropdown button */
+  right: 0; /* Aligns the dropdown menu to the right */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  padding: 15px 20px; /* Adjust as needed */
+  cursor: pointer;
+  white-space: nowrap; /* Keeps the text in one line */
+}
+
+.dropdown-menu li:hover {
+  background-color: #f2f2f2; /* Light grey background on hover */
+}
+
+.dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.dropdown-menu li a {
+  text-decoration: none; /* Removes the underline from the link */
+  color: inherit; /* Inherits the text color from the parent element */
+}

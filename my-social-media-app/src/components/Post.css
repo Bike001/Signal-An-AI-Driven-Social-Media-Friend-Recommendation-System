@@ -1,0 +1,206 @@
+/* Post.css */
+
+.post-header {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+}
+
+
+.post {
+  margin-left: 10vw;
+  border-top: 1px solid #e1e4e8;
+  border-bottom: 3px solid transparent;
+  border-right: 1px solid transparent;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  position: relative;
+}
+
+.comment {
+
+  display: flex;
+  border-top: 1px solid #e1e4e8;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  margin-top: 10px;
+  margin-left: 25px;
+  
+
+
+  position: relative;
+}
+
+.comment {
+  text-align: left ; /* This will ensure that the text within the comment is aligned left */
+  /* Other styles... */
+}
+
+.post-content::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Position relative to the post-content */
+  left: 10px; /* Position the line outside the post-content */
+  top: 40px; /* Start at the top of the post-content */
+  bottom: 0px; /* Stretch to the bottom of the post-content */
+  width: 0.5px; /* Width of the line */
+  background-color: #e1e4e8; /* Color of the line */
+  border-left: 0.5px solid #e1e4e8; /* Makes the line visible */
+}
+
+
+
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.post-user {
+  position: absolute;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-top: 6px;
+}
+
+.comment-user {
+  position:absolute; 
+  margin-left: px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Apply the same styles to both post and comment contents */
+.post-content, .comment-content {
+
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom:-5px;
+  margin-top: 20px;
+  margin-left: 1px;
+  padding: 20px;
+  text-align: left;
+}
+
+
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.post-like, .post-comment {
+  display: inline-block; /* Allows width and height to be set */
+  width: 24px; /* Set the width of your icon */
+  height: 24px; /* Set the height of your icon */
+  background-size: cover; /* Ensures the background image covers the whole element */
+  cursor: pointer;
+  margin-left: 15px;
+  /* background-image will be set in-line in the JSX */
+}
+
+/* You can add a hover effect for icons to give a feedback on interaction */
+.post-like:hover, .post-comment:hover {
+  opacity: 0.7;
+}
+
+
+/* for post comment*/
+
+.post-comment {
+  cursor: pointer;
+  /* Add additional styles if necessary */
+}
+
+/* Styles for the reply box */
+.reply-box {
+  margin-top: 3px;
+  padding: 10px;
+  /* Light grey background, you can adjust the color */
+  border-radius: 0px; /* Rounded corners for the reply box */
+}
+
+.reply-box textarea {
+  width: calc(100% - 30px); /* Adjust width taking padding into account */
+  height: 30px; /* Set a fixed height or use 'auto' for automatic adjustment */
+  margin-bottom: 0px;
+  border: 1px solid #d1d1d1; /* Adjust border color as needed */
+  border-radius: 5px; /* Rounded corners for the textarea */
+  padding: 8px; /* Padding inside the textarea */
+}
+
+
+.reply-box button {
+  float: right;
+  background: white;
+  border: 1px solid #d1d1d1; /* Light border for the button */
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+/* Clear the float from the button */
+.reply-box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Styles for the "Reply" button at the bottom left of the post */
+.reply-button {
+  border: none; /* No border for the button */
+  background: #f0f0f0; /* Light grey background, change as needed */
+  padding: 8px 16px; /* Padding inside the button */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Changes the cursor to indicate it's clickable */
+  outline: none; /* Removes the outline to avoid focus outline */
+  margin-right: auto; /* Pushes the button to the left */
+}
+
+/* Add hover effects for the reply button */
+.reply-button:hover {
+  background-color: #e0e0e0; /* Slightly darker shade on hover */
+}
+
+/* Make sure to position your post-actions accordingly */
+.post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Aligns items to the start of the flex container */
+}
+
+.toggle-comments-text {
+  margin-left: auto;
+  cursor: pointer;
+  padding-left: 10px; /* Adjust the padding as needed */
+  font-size: 15px; /* Change this to increase or decrease the size of the text */
+  color: #555; /* Adjust the text color as needed */
+  /* Add more styles as needed */
+  display: inline-block; /* This ensures padding is included */
+  margin-right: 10px; /* Adjust the space to the right of the text as needed */
+}
+
+.profile-picture {
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  border-radius: 50%; /* Optional: makes it a circle */
+  object-fit: cover; /* Keeps the aspect ratio, and crops the image */
+ 
+  margin-top: 5px;
+  margin-left: -5px
+}
+
+.post-image {
+  width: 94%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* This will cover the area of the element without stretching the image */
+  aspect-ratio: 16 / 9; /* Replace with your desired aspect ratio */
+  margin-bottom: 20px;
+}

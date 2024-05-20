@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #f2e6e6;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.post-box, .post-container {
+  background-color: rgb(249, 249, 249); /* Change to white or any color you prefer */
+  /* Add other styles like padding, margin, border as needed */
+}
+
+/* Add or modify styles for the post button */
+.post-button {
+  background-color: #616761; /* Example: A green background */
+  color: white; /* Text color for the button */
+  padding: 10px 15px; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Modify font size for general text */
+body, .text {
+  font-size: 20px; /* Change the font-size to your preference */
+}

@@ -1,0 +1,14 @@
+.search-results {
+    position: absolute;
+    top: 100%; /* Position below the search input */
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+  }
+  
+  .search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  

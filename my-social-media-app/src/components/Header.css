@@ -1,0 +1,158 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.header .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+.header input[type="text"] {
+  width: 20%;
+  padding: 12px; /* Adjust padding to your preference */
+  margin: 0 10px;
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 10px; /* Rounded corners */
+  outline: none; /* Remove the outline to match the modern style */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+  font-size: 0.7em; /* Adjust font-size as needed */
+}
+
+.logo-img {
+  width: 50px; /* Adjust the size of your logo if needed */
+  height: 50px; /* Keep the aspect ratio */
+  margin-left: 25vw;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns nav items to the right */
+  flex: 1; /* Allows the nav container to grow and take available space */
+  margin-right: -40px; /* Adjust the spacing on the right side as needed */
+}
+
+
+/* Style for Dropdown - ensure it aligns with the rest of the nav items */
+.dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Optional: for positioning sub-menus absolutely within this container */
+  margin-left: 15px; /* Space it out from the previous nav item */
+}
+/* General style for navigation links */
+.header nav .nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px; /* Adjust spacing between the links as needed */
+}
+
+/* Specific styles for each navigation image */
+.home-img {
+  width: 50px;
+  height: 50px;
+  /* Additional styles specific to the home image */
+}
+
+.friends-img {
+  width: 50px;
+  height: 50px;
+  /* Additional styles specific to the friends image */
+}
+
+.messages-img {
+  width: 50px;
+  height: 50px;
+  /* Additional styles specific to the messages image */
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 25vw !important;
+  /* Additional styles specific to the profile image */
+}
+
+
+/* Extracted common input styles */
+.input-style {
+  width: 50%;
+  padding: 10px;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 0.7em;
+}
+
+
+.header input[type="text"], .search-input {
+  /* Apply the extracted common styles */
+  width: 140%;  /* or however wide you need it to be */
+  /* ... other styles */
+  
+  
+}
+
+
+
+
+.header .search-wrapper {
+  position: relative; /* Set the position relative to allow absolute positioning inside */
+  width: auto; /* Set width to auto to contain the input size */
+  margin-left: 1rem; /* Adjust as needed for spacing */
+  margin-right: 7rem; /* Adjust as needed for spacing */
+}
+
+.search-results {
+  position: absolute;
+  top: 100%; /* Position directly below the input field */
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  border-radius: 0 0 8px 8px; /* Only round the bottom corners to match the input field */
+  overflow: hidden; /* Ensures the child elements don't overflow */
+  border: 1px solid #ddd; /* Match the search input field border */
+  border-top: none; /* Remove the top border so it blends with the input field */
+  z-index: 10; /* Ensures the dropdown appears on top of other elements */
+}
+
+.search-result-item {
+  padding: 10px 16px; /* Match the horizontal padding with the input field */
+  border-bottom: 1px solid #eee; /* Light border for each item */
+  cursor: pointer; /* Change cursor to indicate clickable */
+  text-align: left; /* Align text to the left */
+}
+
+.search-result-item:last-child {
+  border-bottom: none; /* No border for the last item */
+}
+
+.search-result-item:hover {
+  background-color: #f9f9f9; /* Light background on hover */
+}
+
+.search-result-item span {
+  font-size: 1rem; /* Font size of the username text */
+  color: #333; /* Darker text for contrast */
+  display: block; /* Make the span a block element to take up full width */
+}
+
+.search-input {
+  width: 100%; /* Full width to match parent container */
+  padding: 10px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners for the input field */
+  font-size: 1rem; /* Consistent font size for the input */
+  box-shadow: none; /* Remove if you don't want the inset shadow */
+  outline: none; /* Remove the outline to match a modern style */
+}

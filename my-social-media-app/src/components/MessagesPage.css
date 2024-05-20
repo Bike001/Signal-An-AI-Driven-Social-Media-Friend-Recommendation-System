@@ -1,0 +1,115 @@
+.messages-page {
+  display: flex;
+  flex-direction: row;
+  max-width: 50%; /* Half the width of the view, with equal margins */
+  margin: 0 auto; /* Centers the flex container */
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px; /* Smaller font size; adjust as needed */
+}
+
+.conversations-list {
+  width: 35%;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  overflow-y: auto;
+  padding: 10px 0;
+  /* ...other styles... */
+}
+
+.conversations-list div {
+  cursor: pointer;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.conversations-list div:hover {
+  background-color: #f2f2f2; /* Light grey background on hover */
+}
+
+.selected-conversation {
+  width: 65%;
+  background-color: #f9f9f9; /* off-white background for the conversation view */
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 18px; /* Rounded corners for message bubbles */
+  margin-bottom: 15px;
+  max-width: 60%; /* Maximum width of a message bubble */
+  word-wrap: break-word;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-size: 0.9rem; /* Adjust font-size for message text */
+}
+
+.sent {
+ 
+}
+
+/* Aligns messages from the sender to the left */
+.message.sent {
+  background-color: #dcf8c6; /* A distinct background for sent messages */
+  align-self: flex-start; /* Align to end for sent messages */
+  margin-right: auto;
+  border-top-right-radius: 3px; /* Adjusts the border-radius for a speech bubble effect */
+}
+
+/* Aligns messages from the receiver to the right */
+.message.received {
+  background-color: #e2e3e5; /* Light grey for received messages */
+  align-self: flex-end; /* Aligns received messages to the right */
+  margin-left: auto;
+  border-top-left-radius: 3px; /* Adjusts the border-radius for a speech bubble effect */
+}
+
+.reply-section {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  border-top: 1px solid #e0e0e0;
+  /* ...other styles... */
+}
+
+
+.reply-section input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.reply-section button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.reply-section button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+  .messages-page {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0; /* Remove margin on smaller screens */
+  }
+
+  .conversations-list,
+  .selected-conversation {
+    width: 100%; /* Full width on smaller screens */
+  }
+}

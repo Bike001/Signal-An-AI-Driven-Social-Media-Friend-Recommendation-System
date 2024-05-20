@@ -1,0 +1,45 @@
+.profile-page {
+  /* No changes here, just ensuring it takes the full width */
+  width: 100%;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Align children vertically */
+  flex-direction: column; /* Stack children vertically */
+  padding-top: 20px; /* Add some padding at the top */
+}
+
+.profile-header > * {
+  margin-bottom: 10px; /* Adds some space between the title and button */
+
+}
+
+.profile-header-inner {
+  display: flex;
+  justify-content: center; /* This will center the title and button next to each other */
+  align-items: center;
+  width: 100%;
+}
+
+.profile-page h1 {
+  font-size: 20px; /* Adjust the font size as desired */
+  margin: 0; /* Ensures no extra space around the h1 element */
+}
+
+.send-button {
+  background: none;
+  border: none;
+  padding: 100;
+  cursor: pointer;
+  margin-left: 20px;
+  /* Removed the margin-left:auto; we don't need it since justify-content:center on the parent will center it */
+}
+
+.send-button img {
+  width: 35px; /* Adjust the width as needed */
+  height: auto; /* This will keep the aspect ratio of the image */
+}
+
+/* Add styles for .user-posts if necessary */

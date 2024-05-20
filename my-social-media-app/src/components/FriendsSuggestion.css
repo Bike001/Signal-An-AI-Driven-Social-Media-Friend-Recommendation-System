@@ -1,0 +1,35 @@
+.friends-suggestion {
+  margin-bottom: 25px;
+}
+
+.suggestion {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center; /* Ensure vertical alignment */
+}
+
+.suggestion .profile-picture {
+  margin-right: 10px; /* Space between the profile picture and the username */
+}
+
+.suggestion span {
+  margin-right: auto; /* This will push the button to the far right */
+}
+
+.suggestion button {
+  margin-left: auto;
+  background-color: #f5f5f5; /* Light grey background */
+  border: 1px solid #ddd; /* Solid border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px; /* Adjust the font size as needed */
+  padding: 5px 25px; /* Adjust padding to fit the text */
+  transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+/* Style for hover state */
+.suggestion button:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+}

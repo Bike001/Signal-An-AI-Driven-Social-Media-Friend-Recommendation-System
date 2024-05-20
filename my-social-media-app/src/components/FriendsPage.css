@@ -1,0 +1,15 @@
+.friends-page {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .friends-page h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 20px; /* Example font size, adjust as needed */
+    font-family: 'Arial', sans-serif; /* Example font family, adjust as needed */
+    text-align: left; /* Aligns text to the left */
+  }
+  

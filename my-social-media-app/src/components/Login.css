@@ -1,0 +1,88 @@
+.login-container {
+
+    font-family: 'Arial', sans-serif; /* Use your preferred font */
+    max-width: 400px; /* Adjust as per your layout */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Adjust border-radius to match your design */
+    box-sizing: border-box;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px; /* Adjust border-radius to match your design */
+    cursor: pointer;
+  }
+  
+  .login-button {
+    background-color: #000; /* Adjust the color to match your design */
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .signup-button {
+    background-color: lightgrey;
+    color: #000;
+    padding: 0;
+    border: none;
+    font-size: 16px;
+   
+  }
+  
+  .login-error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Style for the Instagram button, assuming you add one */
+  .instagram-button {
+    background-color: #fff; /* Instagram color */
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .instagram-button img { /* Adjust the size as needed */
+    width: 20px;
+    margin-right: 8px;
+  }
+  
+  /* Add a horizontal line with text in the middle */
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .divider:before,
+  .divider:after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  .divider:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .divider:not(:empty)::after {
+    margin-left: .25em;
+  }
+  

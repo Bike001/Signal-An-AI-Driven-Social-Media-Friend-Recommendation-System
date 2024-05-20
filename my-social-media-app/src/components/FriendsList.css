@@ -1,0 +1,29 @@
+.friends-list {
+  margin-bottom: 25px;
+}
+
+.friend {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex; /* Apply flexbox layout */
+  align-items: center; /* Vertically center the items */
+  text-align: left;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.friend:hover {
+  background-color: lightgray; /* Change background color on hover */
+}
+
+/* If you have a specific class for the profile picture, you can style it like so: */
+.friend .profile-picture {
+  border-radius: 50%; /* optional: if you want round images */
+  width: 30px; /* Adjust size as necessary */
+  height: 30px; /* Adjust size as necessary */
+  margin-right: 0px; /* Adjust spacing as necessary */
+}
+
+.friend span {
+  margin-left: 10px; /* Space between the image and the username */
+}

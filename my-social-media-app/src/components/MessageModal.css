@@ -1,0 +1,112 @@
+/* MessageModal.css */
+.message-modal {
+  position: fixed;
+  z-index: 1000; /* High z-index to ensure it's on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Black with opacity for the backdrop */
+  display: flex;
+  justify-content: center; /* Center modal horizontally */
+  align-items: center; /* Center modal vertically */
+}
+
+.message-modal-content {
+  background-color: #fefefe;
+  margin: auto; /* Center the modal in the viewport */
+  padding: 30px;
+  border: 1px solid #888;
+  border-radius: 8px; /* Rounded corners for modern look */
+  width: 40%; /* Adjust width for modal size */
+  
+  max-width: 1000px; /* Maximum width */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* Removing the green background as per your request */
+.message-modal-header,
+.message-modal-footer {
+  padding: 10px 20px; /* Padding for header and footer */
+  border-top-left-radius: 8px; /* Rounded top corners */
+  border-top-right-radius: 8px; /* Continue rounding top corners */
+}
+
+/* Align the close button to the right corner */
+.message-modal-header {
+  font-size: 15px; /* Change the font size as desired */
+  padding: 0px 20px; /* Adjust the padding to fit your layout */
+  background-color: #ffffff; /* If you want no color, set to white or the background color of the modal */
+  color: #333; /* Adjust the color to match your design */
+  /* Ensure that the close button is correctly positioned */
+  position: relative; /* Context for positioning the close button */
+  display: flex;
+  justify-content: space-between; /* This will place the title on the left and close button on the right */
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.close {
+  margin-left: auto; /* This will push the close button to the right */
+  color: #333; /* Change color to match your design, assuming a dark 'x' */
+}
+
+/* Removing green background from the footer and adjusting the button */
+.message-modal-footer {
+  
+  background-color: #fff; /* Changed to white */
+  border-bottom-left-radius: 8px; /* Rounded bottom corners */
+  border-bottom-right-radius: 8px; /* Continue rounding bottom corners */
+  text-align: right; /* Align buttons to the right */
+}
+
+.message-modal-body {
+  padding: 20px;
+  background-color: #fff; /* White background for the body */
+  font-size: 20px; /* Adjusting font size to 20px as per your request */
+}
+
+.message-modal textarea {
+  width: 100%; /* Adjusted to 100% width */
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 15px; /* Matching font size with the body text */
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Slightly rounded corners for textarea */
+  box-sizing: border-box; /* Include padding and border in the width */
+  resize: vertical; /* Allow only vertical resizing */
+}
+
+.message-modal button {
+  padding: 10px 20px;
+  background-color: #616162; /* Adjusting color to a lighter green */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Slightly rounded corners for buttons */
+  cursor: pointer;
+}
+
+.message-modal button:hover {
+  background-color: #9ca19d;
+}
+
+/* Positioning the close button */
+.close {
+  color: #000; /* Changed color to black */
+  position: absolute;
+  right: 20px; /* Positioning 20px from the right */
+  top: 20px; /* Positioning 20px from the top */
+  font-size: 28px; /* Keeping the large font size for visibility */
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #555; /* A subtle hover effect */
+  text-decoration: none;
+  cursor: pointer;
+}

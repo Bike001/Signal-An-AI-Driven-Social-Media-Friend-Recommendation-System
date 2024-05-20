@@ -1,0 +1,52 @@
+.post-creator {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: transparent;
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove shadow if not needed */
+}
+
+.post-creator input, /* If you're using an input for 'What's on your mind?' */
+.post-creator textarea {
+  flex-grow: 1;
+  padding: 10px;
+  padding-right: 40px; /* Add more padding to the right to make room for the icon */
+  margin: 0 10px;
+  border: none; /* Remove border */
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow for some depth */
+  outline: none;
+  background-color: #fff;
+  
+  background-repeat: no-repeat;
+  background-position: right 15px center; /* Position the icon to the right */
+  background-size: 20px; /* Size of the icon */
+}
+
+
+.post-creator button {
+  border-radius: 50%;
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none; /* Or set a border if you want */
+  background: #fff; /* Or any other color */
+  cursor: pointer;
+}
+
+/* Adjust the button hover effect */
+.post-creator button:hover {
+  background-color: #f7f7f7;
+}
+
+
+
+

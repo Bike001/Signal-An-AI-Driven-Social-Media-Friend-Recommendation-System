@@ -1,4 +1,4 @@
-# AI-Driven Social Media Friend Recommendation System
+# Signal: An AI-Driven Social Media Friend Recommendation System
 
 ## Overview
 This system comprises two main components: a frontend application and a backend server, alongside a Prolog server for handling specific logic.
@@ -10,6 +10,41 @@ Signal utilizes a multi-tiered web application model with a distributed client-s
 - **Backend Server**: Hosted within a Django application, handling business logic, database operations, user authentication, and API responses.
 - **Prolog Server**: Manages rule-based logic for complex decision-making tasks, including sentiment analysis and friend recommendation logic.
 
+### Pretrained Model for Sentiment Analysis
+We utilize a pretrained model from Hugging Face for sentiment analysis, capable of detecting a wide range of emotions in text. This model enhances our ability to analyze user posts and tailor friend recommendations based on emotional content.
+
+- **Model URL**: [Hugging Face RoBERTa-base for GoEmotions](https://huggingface.co/SamLowe/roberta-base-go_emotions)
+- **Emotions Detected**:
+  - Admiration
+  - Amusement
+  - Anger
+  - Annoyance
+  - Approval
+  - Caring
+  - Confusion
+  - Curiosity
+  - Desire
+  - Disappointment
+  - Disapproval
+  - Disgust
+  - Embarrassment
+  - Excitement
+  - Fear
+  - Gratitude
+  - Grief
+  - Joy
+  - Love
+  - Nervousness
+  - Optimism
+  - Pride
+  - Realization
+  - Relief
+  - Remorse
+  - Sadness
+  - Surprise
+  - Neutral
+  
+  
 ### Internal Functions
 - **Sentiment Analysis Module**: Employs a locally downloaded model from Hugging Face's Transformers library for analyzing the emotional tone of posts.
 - **Friend Recommendation Engine**: Utilizes a Prolog engine applying rule-based logic to sentiment analysis outputs to suggest potential friends.
